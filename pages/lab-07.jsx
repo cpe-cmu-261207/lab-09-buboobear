@@ -34,6 +34,9 @@ export default function Lab07() {
     };
 
     const moveUp = (idx) => {
+        if (idx == 0) {
+            return;
+        }
         let temp = todo[idx];
         todo[idx] = todo[idx - 1];
         todo[idx - 1] = temp;
